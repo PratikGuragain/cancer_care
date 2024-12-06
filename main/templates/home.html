@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design for HealthCare</title>
+  </head>
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div class="nav__logo">Cancer<span>Care</span></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About Us</a></li>
+          <li class="link"><a href="#service">Services</a></li>
+        </ul>
+        <button class="btn">
+          <a href="#contact" style="color: rgb(255, 255, 255);">FAQ's / Contact Us</a>
+        </button>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Health Innovation Empowering Cancer Detection with AI</h1>
+          <p>
+            Welcome to CancerCare Hub, where early detection and advanced
+            diagnostics are our priority.  
+            With cutting-edge technology, expert guidance, and a patient-focused
+            approach, we are committed to empowering you with accurate insights
+            into your health.  
+            Trust us to support you in your journey toward early detection,
+            timely intervention, and better outcomes.  
+            Experience the difference with our comprehensive cancer detection
+            solutions.
+          </p>
+          <button class="btn">
+            <a href="#upload" style="color: rgb(255, 255, 255);">Explore the Model</a>
+          </button>
+        </div>
+        <div class="header__form">
+          <form>
+            <h4>SignUp</h4>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="E-mail" />
+            <input type="text" placeholder="Contact No." />
+            <button class="btn form__btn">SignUp / Login</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container service__container" id="service">
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-microscope-line"></i></span>
+          <h4>About the model</h4>
+          <p>
+            Discover our cutting-edge cancer detection model, designed to
+            classify cancer types using AI algorithms.  
+            Whether through image recognition of X-rays, MRIs, or pathology
+            analysis, the model ensures accurate and swift diagnostics.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-mental-health-line"></i></span>
+          <h4>More about cancer</h4>
+          <p>
+            Understand the stages of cancer, from localized (Stage 0) to
+            advanced metastasis (Stage IV).  
+            Explore how our AI tools analyze tumor size, spread, and lymph node
+            involvement to provide precise staging.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-hospital-line"></i></span>
+          <h4>Precautionary measures</h4>
+          <p>
+            Receive tailored lifestyle recommendations based on your cancer type
+            and stage.  
+            Stay proactive with preventive strategies such as regular
+            screenings, dietary adjustments, and avoiding carcinogens.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container example__container" id="workflow">
+      <h2 class="section__header">How to Leverage AI: Simple Instructions for Users</h2>
+      <p>
+        Explore how our system helps users navigate cancer detection using AI/ML models. Follow these simple steps to understand the workflow.
+      </p>
+      <div class="example__steps">
+        <div class="example__card">
+          <h4>1. User Uploads Data</h4>
+          <p>
+            Upload a diagnostic report or image such as X-rays, MRIs, or biopsy results. Our secure system ensures privacy and accuracy.
+          </p>
+        </div>
+        <div class="example__card">
+          <h4>2. Cancer Type Detected</h4>
+          <p>
+            AI/ML algorithms identify the cancer type (e.g., lung cancer, breast cancer) using advanced image recognition and pathology analysis.
+          </p>
+        </div>
+        <div class="example__card">
+          <h4>3. Cancer Stage and Location</h4>
+          <p>
+            The system determines the stage (e.g., Stage II) and the exact tumor location (e.g., upper right lung lobe) for personalized insights.
+          </p>
+        </div>
+        <div class="example__card">
+          <h4>4. Precautions Provided</h4>
+          <p>
+            Get tailored recommendations such as lifestyle changes, regular screenings, and preventive measures based on the diagnosis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container upload__container" id="upload">
+      <h2 class="section__header">Upload Your Report for Analysis</h2>
+      <p>
+        Upload your diagnostic images or reports securely on our platform for cancer detection. Our system guarantees accurate processing and ensures your data remains private.
+      <div class="upload__content">
+        <div class="upload__icon">
+          <i class="ri-upload-cloud-line"></i>
+          <p id="upload-status">No file uploaded</p>
+        </div>
+        <form id="upload-form">
+          <label for="file-upload" class="upload__btn">
+            <i class="ri-folder-open-line"></i> Choose File
+          </label>
+          <input type="file" id="file-upload" accept="image/*" hidden />
+          <button type="submit" class="btn form__btn">Upload</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section__container contact__container" id="contact">
+      <h2 class="section__header">Help Center / Contact Us</h2>
+      <p>
+        If you have questions or need assistance, feel free to reach out using the form below.
+      </p>
+      <div class="contact__form">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Type your message here " rows="7" required></textarea>
+          <button class="btn form__btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Cancer<span>Care</span></h3>
+          <p>
+            A part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <p><a href="https://www.cancer.gov/types" target="_blank">Types of Cancers</a></p>
+          <p><a href="https://www.cancerresearchuk.org/about-cancer/what-is-cancer/stages-of-cancer" target="_blank">Stages 0 to 4</a></p>
+          <p><a href="https://www.uicc.org/what-we-do/sharing-knowledge/tnm#:~:text=Each%20individual%20aspect%20of%20TNM,otherwise%20of%20distant%20metastatic%20spread" target="_blank">TNM Staging</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Also Check </h4>
+          <p><a href="https://my.clevelandclinic.org/health/articles/cancer-survival-rate" target="_blank">Cancer Survival Rates</a></p>
+          <p><a href="https://www.mrmed.in/health-library/cancer-care/best-oncologists-in-india" target="_blank">Consult Top Oncologists</a></p>
+          <p><a href="https://siteman.wustl.edu/prevention/preventing-cancer/" target="_blank">Preventive Steps</a></p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i> Bengaluru , India 
+          </p>
+          <p><i class="ri-mail-fill"></i> support@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p> CancerCare Copyright © 2024 . All rights reserved.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>  
+  </body>
+</html>
+    <form method="post" action="{% url 'contact_submit' %}">
+        {% csrf_token %}
+        <!-- Contact Form -->
+    </form>
+</body>
+</html>
